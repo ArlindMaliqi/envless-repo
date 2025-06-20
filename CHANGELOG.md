@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0-dev.2](https://github.com/ArlindMaliqi/envless-repo/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2025-06-20)
+
+
+### 🚀 Features
+
+* add release strategy demo and enhanced documentation ([53f7008](https://github.com/ArlindMaliqi/envless-repo/commit/53f7008d314c647a08016c5eba9d4a6a28ade30e))
+
 ## [1.1.0-dev.1](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.3...v1.1.0-dev.1) (2025-06-20)
 
 
