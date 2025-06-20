@@ -15,7 +15,8 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "version:check": "echo \"Current version: $(node -p 'require(\"./package.json\").version')\"",
-    "changelog:preview": "conventional-changelog -p conventionalcommits -r 2"
+    "changelog:preview": "conventional-changelog -p conventionalcommits -r 2",
+    "demo:release": "node scripts/release-demo.js"
   },
   "dependencies": {
     "next": "^15.3.4",

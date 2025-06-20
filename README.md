@@ -1,17 +1,31 @@
 # Next.js Semantic Release Template 🚀
 
-A professional Next.js template with automated semantic versioning, GitHub releases, and Vercel deployment - all without managing environment files in your repository.
+A professional Next.js template with automated semantic versioning, GitHub releases, and Vercel deployment - featuring a comprehensive branching strategy with pre-releases.
 
 ## ✨ Features
 
 - 🔄 **Automated Semantic Releases** - Version bumping based on conventional commits
-- 📝 **Auto-generated Changelogs** - Beautiful release notes from your commit messages
+- 🌿 **Multi-Branch Strategy** - Support for alpha, beta, dev, and release candidate versions
+- 📝 **Auto-generated Changelogs** - Beautiful release notes with emojis from your commit messages
 - 🚀 **Automatic Vercel Deployment** - Deploy on every release
 - 🔐 **Envless Approach** - No `.env` files in your repo, all managed through GitHub Secrets
 - 💻 **Guided Commits** - Interactive conventional commit helper
 - 🎯 **Type Safety** - Full TypeScript support
 - 🎨 **Tailwind CSS** - Modern styling with Tailwind CSS v4
 - 📦 **Zero NPM Publishing** - GitHub-only releases
+- 🏷️ **Pre-release Support** - Alpha, Beta, Dev, and RC versions
+
+## 🌿 Branching Strategy
+
+| Branch | Purpose | Version Example | Description |
+|--------|---------|-----------------|-------------|
+| `main` | Production | `1.0.0` | Stable releases |
+| `develop` | Development | `1.1.0-dev.1` | Latest features |
+| `beta` | Beta testing | `1.1.0-beta.1` | Feature-complete testing |
+| `alpha` | Alpha testing | `1.1.0-alpha.1` | Early features |
+| `release/x.x.x` | Release candidates | `1.1.0-rc.1` | Final testing |
+
+📖 **[Read the full Release Strategy Guide →](./RELEASE_STRATEGY.md)**
 
 ## 🚀 Quick Start
 
