@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.1...v1.0.2) (2025-06-20)
+
+
+### Bug Fixes
+
+* another workflow test for bad ts ([604c29e](https://github.com/ArlindMaliqi/envless-repo/commit/604c29eaaf5c4c1088fc08ae7d0f3cbdc121c761))
+
 ## [1.0.1](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.0...v1.0.1) (2025-06-20)
 
 
