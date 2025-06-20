@@ -6,6 +6,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  deployments: write
+
 jobs:
   deploy:
     name: Deploy to Vercel
@@ -13,6 +17,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          # This ensures we get the latest commit with updated package.json from semantic-release
+          ref: ${{ github.event.release.tag_name || github.sha }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -27,8 +34,9 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_APP_NAME: ${{ secrets.NEXT_PUBLIC_APP_NAME }}
+          NEXT_PUBLIC_APP_URL: ${{ secrets.NEXT_PUBLIC_APP_URL }}
           NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-      
+          
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
         with:
@@ -36,4 +44,6 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod'
-          working-directory: ./
+        env:
+          NEXT_PUBLIC_APP_NAME: ${{ secrets.NEXT_PUBLIC_APP_NAME }}
+          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
