@@ -2,7 +2,12 @@ name: Release
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - main
+      - develop
+      - alpha
+      - beta
+      - 'release/**'
 
 permissions:
   contents: write

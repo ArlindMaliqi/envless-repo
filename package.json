@@ -8,8 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "semantic-release": "semantic-release",
+    "release:dry": "semantic-release --dry-run",
+    "release:alpha": "semantic-release --branches alpha",
+    "release:beta": "semantic-release --branches beta",
+    "release:dev": "semantic-release --branches develop",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "version:check": "echo \"Current version: $(node -p 'require(\"./package.json\").version')\"",
+    "changelog:preview": "conventional-changelog -p conventionalcommits -r 2"
   },
   "dependencies": {
     "next": "^15.3.4",
@@ -27,6 +33,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "semantic-release": "^22.0.8",
