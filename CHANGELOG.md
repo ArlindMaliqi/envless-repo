@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.0...v1.0.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* check versioning ([a2af453](https://github.com/ArlindMaliqi/envless-repo/commit/a2af453d232b5d4f26bc1fffb65390dc0cddd972))
+
 # 1.0.0 (2025-06-20)
 
 
