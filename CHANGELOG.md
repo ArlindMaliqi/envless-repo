@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.2...v1.0.3) (2025-06-20)
+
+
+### Bug Fixes
+
+* add @semantic-release/npm plugin to properly update package.json and package-lock.json versions ([1f30e56](https://github.com/ArlindMaliqi/envless-repo/commit/1f30e56a65e75a9ae49831a907bf9fd1b8409820))
+
 ## [1.0.2](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.1...v1.0.2) (2025-06-20)
 
 
