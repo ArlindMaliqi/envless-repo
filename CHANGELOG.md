@@ -1,3 +1,14 @@
+# 📋 Changelog
+
+All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.1.0-dev.1](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.3...v1.1.0-dev.1) (2025-06-20)
+
+
+### 🚀 Features
+
+* implement comprehensive branching strategy with pre-releases ([5bb0ddb](https://github.com/ArlindMaliqi/envless-repo/commit/5bb0ddbb43a08ebc2111cf3b745554990ffae0c9))
+
 ## [1.0.3](https://github.com/ArlindMaliqi/envless-repo/compare/v1.0.2...v1.0.3) (2025-06-20)
 
 
