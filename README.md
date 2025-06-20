@@ -198,14 +198,32 @@ npm run commit       # Guided conventional commit
 }
 ```
 
-### Conventional Commits
-- `feat:` - New feature
-- `fix:` - Bug fix
-- `docs:` - Documentation
-- `style:` - Formatting changes
-- `refactor:` - Code refactoring
-- `test:` - Adding tests
-- `chore:` - Maintenance
+### Conventional Commit Types
+
+When making a commit, you'll be prompted to select the type of change:
+
+- `feat:` – A new feature
+- `fix:` – A bug fix
+- `docs:` – Documentation only changes
+- `style:` – Changes that do not affect the meaning of the code (formatting, missing semi-colons, etc)
+- `refactor:` – Code changes that neither fix a bug nor add a feature
+- `perf:` – Code changes that improve performance
+- `test:` – Adding or correcting tests
+- `build:` – Changes that affect the build system or external dependencies
+- `ci:` – Changes to CI configuration files and scripts
+- `chore:` – Other changes that don't modify src or test files
+- `revert:` – Reverts a previous commit
+
+**Example guided commit flow:**
+```
+? Select the type of change that you're committing: feat:     A new feature
+? What is the scope of this change (e.g. component or file name): (press enter to skip)
+? Write a short, imperative tense description of the change (max 94 chars):
+ (25) initial envless structure
+? Provide a longer description of the change: (press enter to skip)
+? Are there any breaking changes? No
+? Does this change affect any open issues? No
+```
 
 ## 🎯 Version Display
 
